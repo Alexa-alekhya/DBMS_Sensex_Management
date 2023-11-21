@@ -19,7 +19,7 @@ cursor = db.cursor()
 root=Tk()
 root.geometry("750x750")
 root.configure(bg="yellow")
-img=PhotoImage(file="beautiful.png")
+img=PhotoImage(file="Image_1.png")
 label=Label(root,image=img)
 label.place(x=0,y=0)
 
@@ -40,7 +40,7 @@ def new_stock():
     nw1.configure(bg="blue")
     nw1.title("New stock details")
     nw1.geometry("1366x1366")
-    img=PhotoImage(file="mainpage.png")
+    img=PhotoImage(file="Image_2.png")
     label=Label(nw1,image=img,bd=0)
     label.image=img
     label.place(x=0,y=0)
@@ -199,7 +199,7 @@ def add_user_and_login():
     nw2.configure(bg="black")
     nw2.title("New user details")
     nw2.geometry("1366x1366")
-    img=PhotoImage(file="mainpage.png")
+    img=PhotoImage(file="Image_2.png")
     label=Label(nw2,image=img,bd=0)
     label.image=img
     label.place(x=0,y=0)
@@ -366,7 +366,7 @@ def buy_sell():
     nw3.configure(bg="black")
     nw3.title("Purchase details")
     nw3.geometry("1366x1366")
-    img=PhotoImage(file="mainpage.png")
+    img=PhotoImage(file="Image_2.png")
     label=Label(nw3,image=img,bd=0)
     label.image=img
     label.place(x=0,y=0)

@@ -334,3 +334,17 @@ END //
 DELIMITER ;
 
 CALL CalculateStockCost('emily.jones@example.com', 'INF2');
+DESC LTP;
+
+SELECT * from favourites;
+
+SELECT si.stock_id, si.date_time, si.change_abs, si.perf, si.price
+FROM stock_info si
+WHERE si.stock_id IN (
+    SELECT f.stock_id
+    FROM favourites f
+    WHERE f.email_id = 'emily.jones@example.com'
+);
+
+SELECT * from sensex_val;
+SELECT * from 
